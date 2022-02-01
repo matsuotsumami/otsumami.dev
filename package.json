@@ -1,0 +1,16 @@
+{
+  "name": "@example/framework-multiple",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
+  },
+  "devDependencies": {
+    "@astrojs/renderer-solid": "^0.3.1",
+    "@tsconfig/svelte": "^3.0.0",
+    "astro": "^0.22.20"
+  }
+}
