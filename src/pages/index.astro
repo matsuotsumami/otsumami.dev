@@ -1,7 +1,7 @@
 ---
 // Component Imports
 import { A, B as Renamed } from '../components';
-import * as react from '../components/ReactCounter.jsx';
+// import * as react from '../components/ReactCounter.jsx';
 import { PreactCounter } from '../components/PreactCounter.tsx';
 import PreactSFC from '../components/PreactSFC.tsx';
 import SolidCounter from '../components/SolidCounter.tsx';
@@ -12,21 +12,22 @@ import SvelteCounter from '../components/SvelteCounter.svelte';
 // https://docs.astro.build/core-concepts/astro-components/
 ---
 
-<html lang="en">
+<html lang="ja">
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/x-icon" href="/favicon.ico" />
 		<style global>
 			@import "../styles/global.css";
+      @import "../styles/reset.css";
 		</style>
 	</head>
 	<body>
 		<main>
-			<react.Counter client:visible>
+			<!-- <react.Counter client:visible>
 				<h1>Hello React!</h1>
 				<p>What's up?</p>
-			</react.Counter>
+			</react.Counter> -->
 
 			<PreactCounter client:visible>
 				<h1>Hello Preact!</h1>

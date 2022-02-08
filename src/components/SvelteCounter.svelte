@@ -1,7 +1,8 @@
 
-<script>
+<script lang="ts">
   let children;
   let count = 0;
+  let hello: string
 
   function add() {
 		count += 1;
