@@ -7,6 +7,7 @@ import PreactSFC from '../components/PreactSFC.tsx';
 import SolidCounter from '../components/SolidCounter.tsx';
 import VueCounter from '../components/VueCounter.vue';
 import SvelteCounter from '../components/SvelteCounter.svelte';
+import Layout from '../components/Layout/index.astro'
 
 // Full Astro Component Syntax:
 // https://docs.astro.build/core-concepts/astro-components/
@@ -23,31 +24,33 @@ import SvelteCounter from '../components/SvelteCounter.svelte';
 		</style>
 	</head>
 	<body>
-		<main>
-			<!-- <react.Counter client:visible>
-				<h1>Hello React!</h1>
-				<p>What's up?</p>
-			</react.Counter> -->
+    <Layout>
+      <main>
+        <!-- <react.Counter client:visible>
+          <h1>Hello React!</h1>
+          <p>What's up?</p>
+        </react.Counter> -->
 
-			<PreactCounter client:visible>
-				<h1>Hello Preact!</h1>
-			</PreactCounter>
+        <PreactCounter client:visible>
+          <h1>Hello Preact!</h1>
+        </PreactCounter>
 
-			<SolidCounter client:visible>
-				<h1>Hello Solid!</h1>
-			</SolidCounter>
+        <SolidCounter client:visible>
+          <h1>Hello Solid!</h1>
+        </SolidCounter>
 
-			<VueCounter client:visible>
-				<h1>Hello Vue!</h1>
-			</VueCounter>
+        <VueCounter client:visible>
+          <h1>Hello Vue!</h1>
+        </VueCounter>
 
-			<SvelteCounter client:visible>
-				<h1>Hello Svelte!</h1>
-			</SvelteCounter>
+        <SvelteCounter client:visible>
+          <h1>Hello Svelte!</h1>
+        </SvelteCounter>
 
-			<A />
+        <A />
 
-			<Renamed />
-		</main>
+        <Renamed />
+      </main>
+    </Layout>
 	</body>
 </html>
