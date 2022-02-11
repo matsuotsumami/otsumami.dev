@@ -1,7 +1,13 @@
----
+<!-- ---
 const { content } = Astro.props
----
+--- -->
+
+<style>
+.layout {
+  background-color: aqua;
+}
+</style>
 
 <div class='layout'>
-  {content}
+  <slot />
 </div>
