@@ -27,6 +27,7 @@ module.exports = {
     'node/no-unpublished-bin': 'error',
     'node/no-unpublished-import': 'off',
     'node/no-unpublished-require': 'off',
+    '@next/next/no-img-element': 'off',
 
     'node/process-exit-as-throw': 'error',
     'node/shebang': 'error',
